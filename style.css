@@ -1,0 +1,254 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Lora', serif;
+    background-color: #896B60;
+}
+
+.logo{
+    color:	#D0C7C2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navlinks li{
+    list-style: none;
+}
+.navlinks a{
+    color:	#D0C7C2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.navlinks a::after{
+    content: '';
+    position: absolute;
+    
+}
+
+p{
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: .5vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4c3c3c;
+    border-radius: 100vw;
+}
+
+.burger div{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(109, 39, 39);
+    margin: 7px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: #F5F2EA;
+}
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1450px){
+    .navlinks{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width:850px) {
+    body{
+        overflow-x: hidden;
+    }
+    .slideshow-item{
+        display: flex;
+    }
+    .slideshow-item:nth-child(2) img{
+        display: none;
+    }
+    .slideshow-item:nth-child(3) img{
+        width:inherit;
+    }
+    
+    .navlinks{
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        top: 8vh;
+        background-color: #c5aa6a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 29%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+        justify-content: space-around;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@media screen and (min-width:851px){
+    .slideshow{
+        width: 100vw;
+        height: 92vh;
+        position: relative;
+        overflow: hidden;  
+    }
+    
+    .slideshow-item{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        opacity: 0;
+        animation: cycleImages 31s infinite ;
+    }
+    
+    .slideshow-item img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    .slideshow-item:nth-child(1),
+    .slideshow-item:nth-child(1) img{
+        animation-delay: 0s;
+    }
+    
+    .slideshow-item:nth-child(2),
+    .slideshow-item:nth-child(2) img{
+        animation-delay: 10s;
+    }
+    
+    .slideshow-item:nth-child(3),
+    .slideshow-item:nth-child(3) img{
+        animation-delay: 20s;
+    }
+    
+    
+    @keyframes cycleImages{
+        25%{
+            opacity: 1;
+    
+        }
+        40%{
+            opacity: 0;
+    
+        }
+    }
+    
+    @keyframes zoom{
+        100%{
+            transform: scale(1.3);
+        }
+    }
+    
+    .slideshow-item img{
+        justify-self: center;  
+    }
+}
+
+
+.aboutUsTitle{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+
+
+
+.aboutUsParagraph{
+    font-family: 'Montserrat', sans-serif;
+    color: #4A332D;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}
+
+.aboutUsParagraph2{
+    font-family: 'Montserrat', sans-serif;
+    color: #4A332D;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.slogan img{
+    display: block;
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    padding: 5em;
+}
+
+.slogan{
+    height: 430px;
+}
+  
+.contactBody{
+    background-image: url(images/try21.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutUsTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+}
+
+.slogan2 img{display: block;
+    display: block;
+    margin: 0 auto;
+}
+
