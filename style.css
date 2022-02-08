@@ -82,15 +82,6 @@ body{
 
 
 
-@media screen and (max-width:1450px){
-    .navlinks{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        font-family: 'Open Sans', sans-serif;
-    }
-}
-
 @media screen and (max-width:768px) {
     html body{
         overflow-x: hidden;
@@ -110,6 +101,7 @@ body{
         transition: transform 0.5s ease-in; 
         justify-content: space-around;
         z-index: 2;
+        overflow: hidden;
     }
 
     .burger{
