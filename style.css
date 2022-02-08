@@ -90,7 +90,7 @@ body{
 }
 
 @media screen and (max-width:850px) {
-    body{
+    html body{
         overflow-x: hidden;
     }
     .slideshow-item{
@@ -122,9 +122,6 @@ body{
         display: block;
     }
 
-    .slideshow-item{
-        overflow: hidden;
-    }
 }
 
 .nav-active{
