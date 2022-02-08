@@ -124,8 +124,8 @@ body{
 
 
 .slideshow{
-    width: 100vw;
-    height: 92vh;
+    width: 120em;
+    min-height: 53.4em;
     position: relative;
     overflow: hidden;  
     z-index: 1;
