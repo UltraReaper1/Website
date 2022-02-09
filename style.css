@@ -352,6 +352,7 @@ input[type=text], select, textarea {
     background-image: url(images/Artboard\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 .mapIMG{
