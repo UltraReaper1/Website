@@ -80,14 +80,6 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width:1450px){
-    .navlinks{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        font-family: 'Open Sans', sans-serif;
-    }
-}
 
 @media screen and (max-width:768px) {
     html body{
@@ -260,6 +252,7 @@ body{
     background-image: url(images/try21.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .aboutUsTitle{
@@ -350,9 +343,8 @@ input[type=text], select, textarea {
 
 .virtualtourbody{
     background-image: url(images/Artboard\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-y: hidden;
+    width: inherit;
+    
 }
 
 .mapIMG{
@@ -361,3 +353,26 @@ input[type=text], select, textarea {
     display: flex;
     justify-content: center;
 }
+
+.ExhibitA{
+    font-family:  'Open Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+    margin-top: 25px;
+
+}
+
+.VanGoghImages{
+    float: right;
+}
+
+
+.VanGoghLife{
+    font-family: 'Montserrat', sans-serif;
+    color: #4A332D;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
